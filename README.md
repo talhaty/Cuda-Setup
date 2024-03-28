@@ -25,10 +25,9 @@ sudo ubuntu-drivers autoinstall
 ```
 
 ### Install NVIDIA drivers
-My __recommended__ version is 525, adapt to yours
 
 ```shell
-sudo apt install nvidia-driver-525
+sudo apt install nvidia-driver-550
 ```
 
 ### Reboot & Check
