@@ -78,6 +78,12 @@ sudo apt update
 sudo apt install libcudnn8
 sudo apt install libcudnn8-dev
 sudo apt install libcudnn8-samples
+
+
+export CUDNN_PATH="$HOME/.local/lib/python3.10/site-packages/nvidia/cudnn"
+export LD_LIBRARY_PATH="$CUDNN_PATH/lib":"/usr/local/cuda/lib64"
+# ...
+export PATH="$PATH":"/usr/local/cuda/bin"
 ```
 
 ## Test CUDA on Pytorch
